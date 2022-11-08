@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'lis-unidad',
+    loadChildren: () => import('./pages/lis-unidad/lis-unidad.module').then( m => m.LisUnidadPageModule)
+  },
 ];
 
 @NgModule({
